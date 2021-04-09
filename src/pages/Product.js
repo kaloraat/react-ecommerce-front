@@ -23,7 +23,12 @@ const Product = ({ match }) => {
       let existingRatingObject = product.ratings.find(
         (ele) => ele.postedBy.toString() === user._id.toString()
       );
-      existingRatingObject && setStar(existingRatingObject.star); // current user's star
+//       there is a bug here, this should be
+      if (!existingRatingObject) {
+        setStar(0)
+      } else {
+        existingRatingObject && setStar(existingRatingObject.star); // current user's star 
+      }
     }
   });
 
