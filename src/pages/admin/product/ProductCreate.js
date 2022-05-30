@@ -8,6 +8,15 @@ import { getCategories, getCategorySubs } from "../../../functions/category";
 import FileUpload from "../../../components/forms/FileUpload";
 import { LoadingOutlined } from "@ant-design/icons";
 
+/**
+ * EASY WAY TO RE-POPULATE SUBS IF USER SELECT ANOTHER CATEGORY??
+ if (product.category._id === e.target.value) {
+  loadProduct();
+} else {
+  setArrayOfSubIds([]);
+}
+ */
+
 const initialState = {
   title: "Macbook Pro",
   description: "This is the best Apple product",

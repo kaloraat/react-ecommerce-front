@@ -34,3 +34,13 @@ export const showAverage = (p) => {
     );
   }
 };
+
+/**
+ const getAvgProductRating = (product) =>
+  product?.ratings?.length
+    ? product.ratings.reduce((result, rating) => result + rating.star, 0) /
+      product.ratings.length
+    : 0;
+ 
+export default getAvgProductRating;
+ */

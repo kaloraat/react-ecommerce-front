@@ -25,6 +25,28 @@ export const emptyUserCart = async (authtoken) =>
     },
   });
 
+// const saveAddressToDb = async (e) => {
+//   e.preventDefault();
+//   console.log(
+//     "ADDRESS INPUT FROM USER ===> ",
+//     address,
+//     city,
+//     state,
+//     postalCode,
+//     country
+//   );
+
+//   const res = await axios.post(
+//     `http://localhost:8000/api/user/address`,
+//     { address, city, state, postalCode, country },
+//     {
+//       headers: {
+//         authtoken,
+//       },
+//     }
+//   );
+// };
+
 export const saveUserAddress = async (authtoken, address) =>
   await axios.post(
     `${process.env.REACT_APP_API}/user/address`,

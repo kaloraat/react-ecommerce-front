@@ -26,12 +26,14 @@ const Checkout = ({ history }) => {
   const couponTrueOrFalse = useSelector((state) => state.coupon);
 
   useEffect(() => {
-    getUserCart(user.token).then((res) => {
-      console.log("user cart res", JSON.stringify(res.data, null, 4));
-      setProducts(res.data.products);
-      setTotal(res.data.cartTotal);
-    });
-  }, []);
+    if (user && user.token) {
+      getUserCart(user.token).then((res) => {
+        console.log("user cart res", JSON.stringify(res.data, null, 4));
+        setProducts(res.data.products);
+        setTotal(res.data.cartTotal);
+      });
+    }
+  }, [user]);
 
   const emptyCart = () => {
     // remove from local storage

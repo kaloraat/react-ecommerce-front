@@ -13,7 +13,7 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.5.4",
     "axios": "^0.20.0",
-    "firebase": "^7.19.0",
+    "firebase": "^9.6.7",
     "lodash": "^4.17.20",
     "react": "^16.13.1",
     "react-datepicker": "^3.2.2",

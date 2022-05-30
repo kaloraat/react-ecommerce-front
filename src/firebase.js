@@ -1,16 +1,20 @@
-import * as firebase from "firebase";
+// import * as firebase from "firebase";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDniyhK46KyCVzN4PkypDIKjMEZLfTUx64",
-  authDomain: "ecommerce-225c8.firebaseapp.com",
-  databaseURL: "https://ecommerce-225c8.firebaseio.com",
-  projectId: "ecommerce-225c8",
-  storageBucket: "ecommerce-225c8.appspot.com",
-  messagingSenderId: "593746841585",
-  appId: "1:593746841585:web:f0090fc9296a27f7c67e50",
+  apiKey: "AIzaSyBOFk-WVHCvlONVuo-K5sq9KPo7CYjLd_Q",
+  authDomain: "node-react-28716.firebaseapp.com",
+  databaseURL: "https://node-react-28716.firebaseio.com",
+  projectId: "node-react-28716",
+  storageBucket: "node-react-28716.appspot.com",
+  messagingSenderId: "722018152456",
+  appId: "1:722018152456:web:ff425680d7e93e1e0121bd",
 };
 // Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
 firebase.initializeApp(firebaseConfig);
 
 // export
