@@ -3,6 +3,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import { initializeApp } from "firebase/app";
 
+// google account > mas*******ter@gmail.com
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBOFk-WVHCvlONVuo-K5sq9KPo7CYjLd_Q",

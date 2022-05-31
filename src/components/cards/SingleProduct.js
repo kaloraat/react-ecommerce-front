@@ -65,6 +65,11 @@ const SingleProduct = ({ product, onStarClick, star }) => {
 
   const handleAddToWishlist = (e) => {
     e.preventDefault();
+    if (!user?.token) {
+      toast.error("Please login first");
+      history.push("/login");
+      return;
+    }
     addToWishlist(product._id, user.token).then((res) => {
       console.log("ADDED TO WISHLIST", res.data);
       toast.success("Added to wishlist");
